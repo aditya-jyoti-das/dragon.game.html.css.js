@@ -1,0 +1,63 @@
+*{
+    margin:0%;
+    padding:0%;
+    overflow: hidden;
+}
+.scorecount{
+    color:darkblue;
+    font-size:xx-large;
+}
+.gamecontainer{
+    background-image: url(bg.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: 98% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.dino{
+    background-image: url(dino.png);
+    height: 20vh;
+    width: 18vw;
+    background-size: 100% 100%;
+    bottom:0;
+    left: 13vh;
+    position: absolute;
+}
+.obstacle{
+    background-image: url(dragon.png);
+    height: 10vh;
+    width: 8vw;
+    background-size: 100% 100%;
+    bottom:0;
+    left: 70vh;
+    position: absolute;
+    
+}
+.obstacleanimation{
+    animation:obstacleani 3s linear infinite;
+}
+.dinoanimation{
+    animation:dinoani .6s linear  ;
+}
+@keyframes dinoani{
+    0%{ bottom:0;}
+    50%{bottom:433px;}
+    100%{bottom: 0vh;}
+
+}
+@keyframes obstacleani{
+    0%{left:100vw;}
+    100%{left:-10vw;}
+}
+.gameover{
+    background-color:aqua;
+    opacity:none;
+    color:black;
+    font-size: xx-large;
+    height:20vh;
+    width:20vw;
+    top:50vh;
+    left:50vw;
+    position:absolute;
+}
